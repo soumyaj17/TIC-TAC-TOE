@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #d6e3f8;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border: 2px solid black;
+  background-color: #fef5ef;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.2rem;
+  font-size: 8vmin;
+  color: black;
+}
+
+#playagain {
+  background-color: beige;
+  font-size: large;
+  padding: 1vmin;
+  margin-top: 2vmin;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#playagain:hover{
+    background-color:#DAFFED8F ;
+
+}
+
+#heading1{
+    color: black;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.winnertext {
+  margin: 2vmin;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.xStyle {
+  color: #7bc3a9;
+}
+
+.oStyle {
+  color: #c492b1;
+}
+
+#playerSelect {
+  margin: 2vmin auto;
+}
+
+#playerSelect h2 {
+  margin-bottom: 1vmin;
+}
+
+#chooseX {
+    
+  color: black;
+  background-color: #7bc3a9;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 1vmin 3vmin;
+  margin: 0 1vmin;
+  font-size: large;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#chooseO {
+  background-color: #c492b1;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 1vmin 3vmin;
+  margin: 0 1vmin;
+  font-size: large;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#chooseX:hover,#chooseO:hover {
+  background-color: #DAFFED;
+}
+
+
+#devprof{
+  background-color: beige;
+  font-size: large;
+  padding: 1vmin;
+  margin-top: 2vmin;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#devprof:hover{
+    background-color:#DAFFED8F ;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 2vmin;
+  }
+
+  .game {
+    width: 90vmin;
+    height: 90vmin;
+    gap: 2vmin;
+  }
+
+  .box {
+    height: 28vmin;
+    width: 28vmin;
+    font-size: 10vmin;
+  }
+
+  #playagain {
+    width: 80%;
+    font-size: 5vmin;
+  }
+
+  .winnertext {
+    font-size: 5vmin;
+  }
+
+  #chooseX,
+  #chooseO {
+    font-size: 5vmin;
+    padding: 2vmin 4vmin;
+  }
+}
